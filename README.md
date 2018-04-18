@@ -42,5 +42,5 @@ Updates javadoc reference.
 
 `make zip`
 
-Prepare a zip file for publishing.  All necessary files as well as source code, examples and reference, are included in the zip.  However **bin** directory and Makefile are omitted.
+Prepare a zip file for publishing.  All of the necessary files as well as source code, examples and reference, are included in the zip.  However **bin** directory and **Makefile** are omitted.
 
