@@ -1,6 +1,6 @@
 # ExampleLibrary for Processing
 
-Sample library for Processing with MAKEFILE for easier development.
+Sample library for Processing with *Makefile* for easier development.
 
 Library may be cloned into your **sketchbook/libraries/** directory, or downloaded from the **.zip** file
 
