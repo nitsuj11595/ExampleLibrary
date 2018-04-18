@@ -14,7 +14,7 @@ Use `make` to compile and create a **.jar** file.
 
 ## Using Makefile for you own libraries
 
-Edit **Makefile** before running `make`.  Set NAME to the name of you library name on line 24.  Then specify each of your source files after line 27.  Every line (except the last) should have backslash at end:
+Edit **Makefile** before running `make`.  Set NAME to the name of your library name on line 24.  Then specify each of your source files after line 27.  Every line (except the last) should have backslash at end:
 
 ```
 # List all source files here (example)
