@@ -27,7 +27,16 @@ package ExampleLibrary;
 
 import processing.core.PApplet;
 
+/**
+ * Hello world class
+ * <p>
+ * Prints Hello World when constructed
+ */
+
 public class Hello{
+    /**
+     * Class Constructor
+     */
     public Hello(PApplet applet){
 	System.out.println("Hello World");
     }
