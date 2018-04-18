@@ -29,14 +29,21 @@ CLASSES = \
 ## Recipes
 
 `make`
+
 Compile all files and create java archive.
 
+
 `make clean`
+
 Remove binaries
 
+
 `make docs`
+
 Update javadoc reference.
 
+
 `make zip`
+
 Prepare a zip file for publishing.
 
