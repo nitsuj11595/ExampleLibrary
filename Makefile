@@ -17,7 +17,8 @@
 
 .SUFFIXES: .java .class
 .java.class:
-	mkdir -p bin; javac -d bin -sourcepath src $*.java -cp ../core.jar src/*.java;
+	mkdir -p bin examples library reference;
+	javac -d bin -sourcepath src $*.java -cp ../core.jar src/*.java;
 	jar -cvf library/$(NAME).jar -C ./bin/ .;
 
 # Set this to the name of your library
@@ -36,13 +37,15 @@ docs:
 
 # Compresses files into zip for publishing
 zip:
+	rm -f $(NAME).zip
 	zip -r $(NAME).zip ../$(NAME) -i ../$(NAME)/src/\*
 	zip -r $(NAME).zip ../$(NAME) -i ../$(NAME)/library/\*
 	zip -r $(NAME).zip ../$(NAME) -i ../$(NAME)/reference/\*
 	zip -r $(NAME).zip ../$(NAME) -i ../$(NAME)/examples/\*
 	zip -r $(NAME).zip ../$(NAME) -i ../$(NAME)/library.properties
 
-# Remove binaries and jar file
+# Remove binaries, jar file and zip file
 clean:
-	$(RM) library/$(NAME).jar
-	$(RM) -r bin/*
+	$(RM) -f $(NAME).zip
+	$(RM) -f library/$(NAME).jar
+	$(RM) -rf bin/*
