@@ -1,7 +1,7 @@
 # Makefile for Processing libraries
 # Processing core.jar file must be in parent directory
 
-# Copyright 2017 Justin Wong
+# Copyright 2018 Justin Wong
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 
 .SUFFIXES: .java .class
 .java.class:
-	mkdir bin; javac -d bin -sourcepath src $*.java -cp ../core.jar src/*.java;
+	mkdir -p bin; javac -d bin -sourcepath src $*.java -cp ../core.jar src/*.java;
 	jar -cvf library/$(NAME).jar -C ./bin/ .;
 
 # Set this to the name of your library
