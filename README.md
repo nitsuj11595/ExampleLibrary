@@ -1,8 +1,8 @@
 # ExampleLibrary for Processing
 
-Sample library for Processing with *Makefile* for easier development.
+Sample library for Processing with **Makefile** for easier development.
 
-Library may be cloned into your **sketchbook/libraries/** directory, or downloaded from the **.zip** file
+Completed libraries may be cloned into your **sketchbook/libraries/** directory, or downloaded from the **.zip** file
 
 
 
@@ -14,7 +14,7 @@ Use `make` to compile and create a **.jar** file.
 
 ## Using Makefile for you own libraries
 
-Edit *Makefile* before running `make`.  Set NAME to the name of you library name on line 24.  Then specify each of you source files after line 27.  Every line (except the last) should have backslash at end:
+Edit **Makefile** before running `make`.  Set NAME to the name of you library name on line 24.  Then specify each of you source files after line 27.  Every line (except the last) should have backslash at end:
 
 ```
 # List all source files here (example)
@@ -30,20 +30,17 @@ CLASSES = \
 
 `make`
 
-Compile all files and create java archive.
-
+Compile all source files and create java archive.
 
 `make clean`
 
-Remove binaries
-
+Remove binaries.  Effectively uninstalls library, but keeps source code.
 
 `make docs`
 
-Update javadoc reference.
-
+Updates javadoc reference.
 
 `make zip`
 
-Prepare a zip file for publishing.
+Prepare a zip file for publishing.  All necessary files as well as source code, examples and refernece, are included in the zip.  However **bin** directory and Makefile are omitted.
 
