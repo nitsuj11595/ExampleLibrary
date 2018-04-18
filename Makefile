@@ -29,6 +29,11 @@ CLASSES = \
 default: classes
 classes: $(CLASSES:.java=.class)
 
+# Update documentation
+docs:
+	rm -rf reference; mkdir -p reference; \
+	javadoc -d reference  $(CLASSES);
+
 # Compresses files into zip for publishing
 zip:
 	zip -r $(NAME).zip ../$(NAME) -i ../$(NAME)/src/\*
